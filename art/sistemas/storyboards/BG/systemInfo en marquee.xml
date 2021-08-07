@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+<text name="systemInfo">
+<systemInfoDelay>700</systemInfoDelay>
+<size>0.46 -0.23</size>
+<pos>0.062 0.21</pos>
+<fontSize>0.11</fontSize>
+<fontPath>./art/sistemas/fuentes/Anticlimax.ttf</fontPath>
+<backgroundColor>00000000</backgroundColor>
+<color>000000</color>
+<glowColor>ffffff</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0</reflexion>
+<zIndex>27</zIndex>
+</text>
+
+<image name="logocoinops" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</image>
+</view>
+</theme>

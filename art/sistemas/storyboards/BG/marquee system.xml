@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+<video name="marquesinavideo" extra="true">
+<visible>true</visible>
+<path>./art/sistemas/videos/marquesina.mp4</path>
+<path>./art/sistemas/videos/${system.theme}.mp4</path> 
+</video>   
+</view>
+</theme>

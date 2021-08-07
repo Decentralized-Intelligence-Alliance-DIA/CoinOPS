@@ -1,0 +1,441 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="gamecarousel">
+<gamecarousel name="gamecarousel">
+<linearSmooth>true</linearSmooth>
+<zIndex>123</zIndex>	      
+<type>vertical_wheel</type>
+<size>1 1</size>
+<logoScale>1.45</logoScale>
+<logoSize>0.130 0.260</logoSize>
+<color>ffffff</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>9</logoRotation>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+<text name="gamecarouselLogoText">
+<fontSize>0.030</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<color>FFFFFFFF</color>
+<glowColor>000000FF</glowColor>
+<glowSize>4</glowSize>
+<lineSpacing>1.0</lineSpacing>
+</text>
+
+<image name="sombra" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>34</zIndex>
+</image> 
+
+<image name="background3" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>05</zIndex>
+</image> 
+
+
+<image name="background" extra="true">
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<zIndex>35</zIndex>
+</image>
+
+<image name="lineasv" extra="true">
+<tile>false</tile>
+<linearSmooth>true</linearSmooth>
+<zIndex>29</zIndex>
+</image> 
+
+<image name="scanlinemarquee" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>28</zIndex>
+</image> 
+
+<image name="glassvideo" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<linearSmooth>true</linearSmooth>
+<zIndex>30</zIndex>
+</image>   
+
+<image name="glassmarquee" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>29</zIndex>
+</image>   
+
+<image name="backgroundsystem" extra="true">
+<tile>false</tile>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="10" duration="2950" mode="easeIn"/> 
+<animation property="opacity" from="0" to="10" duration="2950" begin="8000" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="linear"/>
+</storyboard>
+</image> 
+
+<video name="videofondomarquee" extra="true">
+<visible>true</visible>
+<rotation>0</rotation>  
+<roundCorners>0</roundCorners>   
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<audio>${v0.audio}</audio>
+<path>./art/sistemas/videos/splash.mp4</path>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>24</zIndex>
+</video>
+
+<video name="marquerandomvid" extra="true">
+<visible>false</visible>
+<rotation>0</rotation>  
+<roundCorners>0</roundCorners>   
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<audio>${v0.audio}</audio>
+<path>./art/sistemas/videos/splash.mp4</path>
+<path>{random}</path>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>25</zIndex>
+</video>
+
+
+<video name="marquesinavideo" extra="true">
+<visible>true</visible>
+<rotation>0</rotation>  
+<roundCorners>0</roundCorners>   
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<delay>0</delay>
+<showSnapshotNoVideo>false</showSnapshotNoVideo>
+<showSnapshotDelay>false</showSnapshotDelay>
+ <linearSmooth>true</linearSmooth>
+<color>FFFFFF</color>
+<zIndex>26</zIndex>
+</video>
+
+
+<image name="pointerl" extra="true">
+<visible>false</visible>
+</image>
+    
+<image name="pointer" extra="true">
+<tile>false</tile>
+<pos>0.963 0.50</pos>
+<origin>0.5 0.5</origin>
+<size>0.075 0.175</size>
+<path>./art/sistemas/pointer/default.png</path>
+<path>./art/sistemas/pointer/${system.theme}.png</path>
+<storyboard repeat="forever">
+<animation property="x" from="0.963" to="0.940" duration="60" autoreverse="true" begin="4000" repeat="3"/>
+</storyboard>
+<zIndex>290</zIndex>
+</image>
+
+
+<image name="personaje" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FFFFFFFF</color>
+<origin>0 0</origin>
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>92</zIndex>
+</image>
+
+<image name="personaje2" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>90</zIndex>
+</image>
+
+<image name="personaje3" extra="true">
+<path>./art/sistemas/character/default.png</path>
+<path>./art/sistemas/character/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>FE2EF7</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<image name="personaje4" extra="true">
+<path>./art/sistemas/character2/default.png</path>
+<path>./art/sistemas/character2/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<image name="personaje5" extra="true">
+<path>./art/sistemas/character3/default.png</path>
+<path>./art/sistemas/character3/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<color>ffffff</color>
+<origin>0 0</origin>
+<glowColor>ffffff60</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0.50 0.0</reflexion>
+<zIndex>91</zIndex>
+</image>
+
+<helpsystem name="help">
+<visible>false</visible>
+<textColor>000000</textColor>
+<iconColor>000000</iconColor>
+<fontSize>0.020</fontSize>
+<pos>0.996 0.9993</pos>
+</helpsystem>
+
+<video name="md_video">
+<visible>true</visible>
+<color>ffffff</color>            
+<delay>0</delay>
+<effect>none</effect>    		 
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+</video> 
+
+<text name="md_name">
+<visible>true</visible>	
+<size>0.185 0.01</size> 
+<glowColor>000000</glowColor>
+<backgroundColor>00000000</backgroundColor>
+<color>ffffff</color>
+<rotation>0</rotation> 
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+ <linearSmooth>true</linearSmooth>
+<fontSize>0.022</fontSize>
+<alignment>center</alignment>
+</text>
+	
+<text name="logoText">
+<pos>0.2800 0.980</pos>
+<size>0.216 0.135</size>
+<origin>0.5 0.5</origin>
+<fontSize>0.020</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<size>0.57 0.1</size>
+<alignment>center</alignment>
+<color>ffffff70</color>
+<forceUppercase>1</forceUppercase>
+<linearSmooth>true</linearSmooth>
+<zIndex>96</zIndex> 
+</text>
+
+<image name="md_thumbnail">
+<reflexion>0.0 0.0</reflexion>
+<roundCorners>0.05</roundCorners>
+<linearSmooth>true</linearSmooth>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="y" from="1.01" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+</image>
+
+<image name="md_marquee">
+<pos>0.290 0.110</pos>
+<size>0.416 0.195</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>26</zIndex> 
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+</image>
+
+<image name="logo">
+<pos>0.290 0.110</pos>
+<size>0.433 0.210</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>97</zIndex>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>   
+</image>
+
+<image name="md_flag"> 
+<visible>true</visible>
+<origin>0.5 0.5</origin>
+<pos>0.4470 0.753</pos>
+<size>0.025 0.023</size>
+<zIndex>200</zIndex>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="rotation" from="0" to="360" begin="0" duration="1000" mode="Bump"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+</image>
+
+<image name="md_image">
+<reflexion>0.0 0.0</reflexion>
+<linearSmooth>true</linearSmooth>
+<zIndex>26</zIndex>
+<delay>0.07</delay>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+</image>
+
+
+<text name="md_description">
+<glowColor>000000</glowColor>
+<glowSize>2</glowSize>
+<forceUppercase>0</forceUppercase>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<fontSize>0.013</fontSize>
+<color>ffffff</color>
+<glowColor>000000</glowColor>
+<glowSize>1</glowSize>
+</text>
+
+<rating name="md_rating">
+<pos>0.630 0.02</pos>
+<size>0.040 0.019</size>
+<color>00000000</color>
+<unfilledColor>00000000</unfilledColor> 
+</rating>
+
+<text name="md_players">
+<color>00000000</color>
+</text>
+
+<image name="defaultimagen" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</image> 
+		
+<image name="md_cheevos,md_notcheevos,md_manual,md_nomanualmd_manual,md_nomanual,md_hidden,md_savestate,md_nosavestate,md_kidgame, md_notkidgame">
+<color>00000000</color>
+</image>
+</view>
+</theme>

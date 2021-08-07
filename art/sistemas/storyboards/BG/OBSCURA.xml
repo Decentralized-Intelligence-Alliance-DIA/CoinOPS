@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system, basic, detailed, grid, carousel, gamecarousel">
+
+<gamecarousel name="gamecarousel">
+<linearSmooth>true</linearSmooth>
+<zIndex>123</zIndex>	      
+<type>vertical_wheel</type>
+<pos>0.352 0</pos>
+<size>1 1</size>
+<logoScale>1.45</logoScale>
+<logoSize>0.130 0.260</logoSize>
+<color>ffffff</color>
+<maxLogoCount>30</maxLogoCount>
+<logoRotation>9</logoRotation>
+<logoRotationOrigin>4.6 0.5</logoRotationOrigin>
+<logoAlignment>center</logoAlignment>   
+<imageSource>marquee</imageSource>
+</gamecarousel> 
+
+<image name="background" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<size>1 1</size>
+<pos>0 0</pos>
+<origin>0 0</origin>
+<path>./art/sistemas/fondos/OBSCURA.png</path>
+<linearSmooth>true</linearSmooth>
+</image>  
+
+<image name="lineasv" extra="true">
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>29</zIndex>
+</image> 
+
+<image name="glassvideo" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>30</zIndex>
+</image>  
+
+<text name="md_description">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="manufacturerName" extra="static">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="fullName" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="sys_description" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="sys_info" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+</view>
+
+
+
+<view name="basic, detailed, grid, carousel, gamecarousel">
+<video name="md_video">
+<visible>true</visible>
+<pos>0.2880 0.540</pos>
+<maxSize>0.3728 0.4900</maxSize>
+<origin>0.5 0.5</origin>
+<color>ffffff</color>            
+<delay>0</delay>
+<effect>none</effect>    		 
+<showSnapshotNoVideo>true</showSnapshotNoVideo>
+<showSnapshotDelay>true</showSnapshotDelay>
+<zIndex>28</zIndex>
+</video> 
+
+<image name="md_image">
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<reflexion>0.0 0.0</reflexion>
+<linearSmooth>true</linearSmooth>
+<zIndex>26</zIndex>
+<delay>0.07</delay>
+<storyboard event="open">
+<animation property="opacity" from="0" to="0" duration="250" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" duration="400" mode="easeIn" begin="250"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="activateNext">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="activatePrev">
+<animation property="opacity" from="0" to="1" duration="400" mode="easeOutCubic"/>
+<animation property="opacity" from="0" to="1" duration="1950" mode="easeIn"/>
+</storyboard>
+<storyboard event="deactivateNext">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>
+<storyboard event="deactivatePrev">
+<animation property="opacity" from="1" to="0" duration="400" mode="easeOutCubic"/>
+</storyboard>  
+</image>
+
+<image name="backgroundsystem" extra="true">
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<path>./art/sistemas/wall/default.png</path>
+<path>./art/sistemas/wall/${system.theme}.png</path>
+<linearSmooth>true</linearSmooth>
+<zIndex>22</zIndex>
+<storyboard repeat="forever">
+<animation property="opacity" from="0" to="10" duration="2950" mode="easeIn"/> 
+<animation property="opacity" from="0" to="10" duration="2950" begin="8000" mode="easeIn"/>
+<animation property="opacity" from="0" to="1" begin="0" duration="350" mode="linear"/>
+</storyboard>
+</image> 
+
+<image name="lineasv" extra="true">
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>29</zIndex>
+</image> 
+
+<image name="glassvideo" extra="true">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>30</zIndex>
+</image> 
+
+<image name="md_thumbnail">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>11</zIndex>
+</image>
+
+<image name="md_fanart">
+<visible>true</visible>
+<tile>false</tile>
+<pos>0.2880 0.540</pos>
+<size>0.3728 0.4900</size>
+<origin>0.5 0.5</origin>
+<linearSmooth>true</linearSmooth>
+<zIndex>10</zIndex>
+</image>
+
+<text name="md_description">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="manufacturerName" extra="static">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="fullName" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="sys_description" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text>
+
+<text name="sys_info" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</text> 
+</view>
+</theme>

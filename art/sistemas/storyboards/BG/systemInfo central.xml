@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<theme>
+<formatVersion>7</formatVersion>
+<view name="system">
+<text name="systemInfo">
+<systemInfoDelay>0</systemInfoDelay>
+<size>0.46 -0.23</size>
+<pos>0.180 0.160</pos>
+<fontSize>0.04</fontSize>
+<fontPath>./art/sistemas/fuentes/Pixel LCD-7.ttf</fontPath>
+<backgroundColor>00000000</backgroundColor>
+<color>000000</color>
+<glowColor>ffffff</glowColor>
+<glowSize>2</glowSize>
+<reflexion>0</reflexion>
+<zIndex>150</zIndex>
+</text>
+</view>
+</theme>
