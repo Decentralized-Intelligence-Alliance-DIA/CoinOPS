@@ -174,7 +174,12 @@
 <zIndex>10</zIndex>
 </image>
 
-<text name="md_description">
+<image name="fondonegro,bigboxlogo,bigboxcharacter" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</image>
+
+<text name="manufacturerbigbox,fullNamebigbox,md_description">
 <visible>false</visible>
 <color>00000000</color>
 </text>

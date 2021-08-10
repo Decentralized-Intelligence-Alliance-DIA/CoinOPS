@@ -688,6 +688,7 @@ Se agrego otra vista basada en el tema COLORFUL bigbox (sin la animacion, solo e
 <include name="BASIC">./art/sistemas/vista-lista-juegos/detalle.xml</include>
 <include name="GRID">./art/sistemas/vista-lista-juegos/grid.xml</include>
 <include name="CAROUSEL">./art/sistemas/vista-lista-juegos/carrusel.xml</include>
+<include name="DETALLE 2">./art/sistemas/vista-lista-juegos/DETALLE 2.xml</include>
 </theme>
 
 

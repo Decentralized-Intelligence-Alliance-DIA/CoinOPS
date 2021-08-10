@@ -249,7 +249,6 @@
 
 <text name="md_name">
 <visible>true</visible>	
-<size>0.185 0.01</size> 
 <glowColor>000000</glowColor>
 <backgroundColor>00000000</backgroundColor>
 <color>ffffff</color>

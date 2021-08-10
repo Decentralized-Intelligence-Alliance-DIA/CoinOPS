@@ -76,7 +76,7 @@
 
 
 
-<view name="basic, detailed, grid, carousel, gamecarousel">
+<view name="basic,detailed,grid,carousel,gamecarousel">
 <video name="md_video">
 <visible>true</visible>
 <pos>0.2880 0.540</pos>
@@ -175,7 +175,14 @@
 <zIndex>10</zIndex>
 </image>
 
-<text name="md_description">
+
+
+<image name="fondonegro,bigboxlogo,bigboxcharacter" extra="true">
+<visible>false</visible>
+<color>00000000</color>
+</image>
+
+<text name="manufacturerbigbox,fullNamebigbox,md_description">
 <visible>false</visible>
 <color>00000000</color>
 </text>
